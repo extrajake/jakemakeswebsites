@@ -1,0 +1,447 @@
+/* ----------------------------------------------------------------
+	Canvas: Demo Landing 2
+	Version: 1.0
+-----------------------------------------------------------------*/
+
+:root {
+  --themecolor: #f7c25e;
+  --themecolorrgba: 247, 194, 94;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.gradient-red-yellow,
+.h-gradient-red-yellow:hover {
+  background-image: -webkit-linear-gradient(
+    110.78deg,
+    rgb(118, 230, 80) -1.13%,
+    rgb(249, 214, 73) 15.22%,
+    rgb(240, 142, 53) 32.09%,
+    rgb(236, 81, 87) 48.96%,
+    rgb(255, 24, 189) 67.94%,
+    rgb(26, 75, 255) 85.34%
+  ) !important;
+  background-image: linear-gradient(
+    110.78deg,
+    rgb(118, 230, 80) -1.13%,
+    rgb(249, 214, 73) 15.22%,
+    rgb(240, 142, 53) 32.09%,
+    rgb(236, 81, 87) 48.96%,
+    rgb(255, 24, 189) 67.94%,
+    rgb(26, 75, 255) 85.34%
+  ) !important;
+}
+
+#slider {
+  background: #fff url("images/cool-background-2.svg") repeat top center;
+  background-size: cover;
+}
+
+.menu-item.current > .menu-link,
+.menu-item:hover > .menu-link {
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.overflow-visible {
+  overflow: visible !important;
+}
+.rounded-10 {
+  border-radius: 10px !important;
+}
+
+#content p {
+  line-height: 1.5;
+}
+.page-bottom {
+  background-color: #32a6d4;
+}
+
+@media (min-width: 992px) {
+  .section,
+  #footer .footer-widgets-wrap {
+    margin: 100px 0;
+    padding: 100px 0;
+  }
+}
+
+.menu-link {
+  font-weight: 600;
+  font-size: 0.925em;
+}
+.about-menu-link {
+  color: white;
+}
+
+.emphasis-title h1 {
+  font-size: calc(8.82629vw + 12.9014px) !important;
+  font-weight: 900;
+}
+
+.button-hero {
+  padding: 23px 48px !important;
+  font-size: 1rem;
+  border-radius: 50px;
+  box-shadow: 0px 13px 18px -14px rgba(0, 0, 0, 0.35);
+}
+
+.button.button-reveal.text-right i {
+  opacity: 0;
+  left: auto;
+  right: 32px;
+  background-color: transparent;
+  transition: all 0.3s ease !important;
+}
+
+.button:hover.button-reveal.text-right i {
+  opacity: 1;
+  right: 18px;
+  transform: translateX(-10px);
+}
+
+.counter.counter-xlarge {
+  font-size: 4.5rem;
+  letter-spacing: -2px;
+}
+
+.counter + span {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin: 0 0 0 12px;
+  text-transform: lowercase;
+}
+
+.testi-content p {
+  position: relative;
+  font-style: normal;
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.testimonials-carousel::before {
+  content: "\e7ad";
+  font-family: font-icons;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 5rem;
+  color: #eee;
+  z-index: 0;
+}
+
+.testi-meta img {
+  width: 40px !important;
+  margin-right: 10px;
+}
+
+.testi-meta::before {
+  display: none;
+}
+
+#oc-testi.owl-carousel .owl-dots {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.portfolio-image {
+  border: 10px solid white;
+  border-radius: 24px;
+}
+
+.portfolio-image img {
+  border-radius: 10px;
+}
+
+.translatey-3,
+.h-translatey-3:hover {
+  transform: translateY(-3px) !important;
+}
+
+.tf-ts {
+  -webkit-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+#oc-services.owl-carousel .card-body img {
+  width: 50px;
+}
+
+.accordion-header {
+  padding: 1.25rem 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-top: 1px dotted #d5d5d5 !important;
+  color: white;
+}
+
+.accordion-content {
+  padding-bottom: 2rem;
+  padding-left: 30px;
+}
+
+.accordion-header.accordion-active {
+  color: #222;
+}
+
+/******************************** CUSTOM COMPONENTS *************************************/
+
+.web-designer {
+  background-image: linear-gradient(360deg, #0093e9 0%, #80d0c7 100%);
+}
+#logo {
+  /* font-family: "Merriweather Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  background-image: -webkit-linear-gradient(
+    110.78deg,
+    rgb(240, 142, 53) -1.09%,
+    rgb(236, 81, 87) 32.96%,
+    rgb(255, 24, 189) 55.94%,
+    rgb(26, 75, 255) 85.34%
+  ) !important;
+  background-image: linear-gradient(
+    110.78deg,
+    rgb(240, 142, 53) -1.09%,
+    rgb(236, 81, 87) 32.96%,
+    rgb(255, 24, 189) 55.94%,
+    rgb(26, 75, 255) 85.34%
+  ) !important;
+}
+
+.example-text {
+  color: white;
+}
+
+.say-nice {
+  text-align: center;
+  color: white;
+}
+
+.demo-page {
+  /* background-color: #ff6584; */
+  height: 100vh;
+  color: white;
+  background-image: -webkit-linear-gradient(160deg, #ff6584 50%, #2f2e41 50%);
+  /* background-image: linear-gradient(176deg, #22313f 70%, #fff calc(70% + 2px)); */
+  /* background-image: url(images/blob.svg); */
+}
+.vertical-middle h4,
+h1 {
+  color: white;
+}
+
+.slider-inner {
+  float: right;
+}
+
+.lead-text {
+  color: white;
+}
+
+/************************************Demo Section*****************************************/
+
+.block {
+  width: 100%;
+  height: 760px;
+  /* background-color: #ffffff;
+  background-color: #ffffff;
+  transform: skewY(-10deg);
+  transform-origin: 0; */
+  position: absolute;
+}
+
+.text {
+  position: relative;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 10%;
+  /* max-width: 1024px; */
+}
+.demo-blob {
+  position: absolute;
+}
+
+/**********************************Card Section*******************************************/
+
+.card {
+  text-align: center;
+  color: white;
+}
+.card-body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.card-body h3 {
+  color: white;
+}
+
+.q-and-a {
+  height: 100vh;
+  background-image: -webkit-linear-gradient(200deg, #32a6d4 50%, #ff6584 50%);
+}
+.q-and-a-container {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+/* --------------------------------About Me Page----------------------------------------- */
+.about-wrapper {
+  background-image: -webkit-linear-gradient(160deg, #ff6584 50%, #2f2e41 50%);
+}
+.about-wrapper ul,
+li {
+  color: white;
+}
+
+.mw-md {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: bold;
+}
+.mw-md p {
+  font-size: 1.2rem;
+}
+
+.pb-0 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+#content {
+}
+
+.about-head {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 10%;
+}
+.about-icons {
+  max-height: 150px;
+}
+
+.blobs {
+  position: absolute;
+  top: 0;
+  margin-left: -30;
+}
+.blob-2 {
+  -xmargin-top: -17%;
+  margin-left: 20%;
+  height: 1200px;
+}
+.blob-3 {
+  margin-top: -7%;
+  margin-left: -35%;
+}
+.blob-4 {
+  margin-top: -10%;
+}
+.freelancer-writeup {
+  overflow-x: hidden;
+}
+
+/* --------------------------------Works Page----------------------------------------- */
+
+.showcase {
+  background-color: #ff6584;
+}
+
+/* Border Form Design
+---------------------------------------------------------------------------- */
+
+form label {
+  text-transform: none;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0;
+  color: white;
+}
+
+.form-group input {
+  color: white;
+}
+
+.form-custom {
+  border: 5px solid white;
+  padding: 3%;
+  border-radius: 20px;
+}
+
+.border-form-control {
+  height: 42px;
+  padding: 0;
+  font-size: 1.25rem;
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.07);
+}
+
+.accordion {
+  font-size: 1.3rem;
+}
+
+.footer-h {
+  color: white !important;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 7%, 0);
+    transform: translate3d(0, 7%, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 7%, 0);
+    transform: translate3d(0, 7%, 0);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .about-header-mobile {
+    background-color: #2f2e41;
+  }
+  .header-row-mobile {
+    background-color: #2f2e41;
+  }
+  #header-wrap-mobile {
+    background-color: #2f2e41;
+  }
+  #pirmary-menu-trigger-mobile {
+    color: white;
+  }
+  .svg-trigger-mobile {
+    color: white;
+  }
+}
