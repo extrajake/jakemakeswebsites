@@ -24,6 +24,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.body-wrap {
+  overflow-x: hidden;
+}
+
 .gradient-red-yellow,
 .h-gradient-red-yellow:hover {
   background-image: -webkit-linear-gradient(
@@ -443,5 +447,17 @@ form label {
   }
   .svg-trigger-mobile {
     color: white;
+  }
+  .mb-0 {
+    display: none;
+  }
+  .form-custom {
+    margin: 5%;
+    border: 2px solid white;
+    padding: 5%;
+    text-align: center;
+  }
+  .footer-head {
+    text-align: center;
   }
 }
